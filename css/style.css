@@ -1,0 +1,106 @@
+.body {
+            background-color: #bef194; /* สีพื้นหลังเป็นสีเทา */
+            
+        }
+.fonts-head {
+            font-family: 'Anuphan', sans-serif; /* กำหนดฟอนต์เป็น Anuphan Medium 500 */
+           font-weight: 300;
+        }
+p {
+    margin-top: 20px; /* เพิ่มช่องว่างด้านบนของย่อหน้า */
+    text-indent: 50px;
+}
+
+
+/* กำหนด container หลัก */
+.frame-row {
+  display: flex;
+  justify-content: center;   /* จัดให้อยู่ตรงกลางแนวนอน */
+  gap: 20px;                 /* ระยะห่างระหว่างกรอบ */
+  flex-wrap: wrap;           /* ถ้าหน้าจอแคบให้พับลง */
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* สไตล์ของกรอบข้อความ */
+.message-frame {
+  background: #ffff8c;       /* สีเทาอ่อน */
+  border-radius: 12px;       /* มุมโค้งมน */
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  width: calc(33.333% - 14px); /* 3 กรอบต่อบรรทัด (ลบระยะห่างนิดหน่อย) */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ปรับสำหรับหน้าจอมือถือ */
+@media (max-width: 768px) {
+  .message-frame {
+    width: 100%; /* ให้แต่ละกรอบเต็มบรรทัดเมื่อหน้าจอแคบ */
+  }
+}
+
+.message-frame img {
+  max-width: 100%;
+  max-height: 90%;           /* ป้องกันรูปใหญ่เกินกรอบ */
+  border-radius: 10px;       /* มุมโค้งมนของรูป */
+}
+
+
+.navbar {
+      background-color: #ffe4ec; /* สีชมพูอ่อน */
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Poppins", sans-serif;
+    }
+
+
+/* สร้างกรอบข้อความ */
+    .text-box {
+      background-color: #fbe8f7;       /* สีพื้นหลังของกรอบ */
+      border-radius: 16px;             /* มุมโค้งนุ่มนวล */
+      padding: 40px 60px;              /* ระยะห่างภายในกรอบ */
+      text-align: center;              /* ข้อความในกรอบให้อยู่กลาง */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* เงาเบาๆ */
+    }
+
+    /* กำหนด class สำหรับข้อความที่ต้องการใช้ฟอนต์นี้ */
+.lexend-peta {
+  font-family: 'Lexend Peta', sans-serif;
+  font-weight: 200; /* ExtraLight */
+  font-size: 36px;  /* ขนาดตัวอักษร (ปรับได้ตามต้องการ) */
+}
+
+.body-review {
+      justify-content: center;  /* จัดกลางแนวนอน */
+      align-items: center;      /* จัดกลางแนวตั้ง */
+      background-color: #fff5f8;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* กรอบข้อความ clickable */
+    .text-box-review {
+      padding: 15px 25px;              /* ระยะห่างภายในกรอบ */
+      background-color: #ffcce0;       /* สีชมพูอ่อน */
+      border-radius: 12px;             /* มุมโค้งนุ่ม */
+      text-align: center;
+      color: #fff;
+      font-weight: 200;
+      text-decoration: none;           /* ลบเส้นใต้ลิงก์ */
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    
+
+    
+
+    
+
+    
+    
+   
+
+    
